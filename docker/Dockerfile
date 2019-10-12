@@ -1,5 +1,5 @@
 # docker build -t ubuntu1604py36 .
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update && \
         apt-get install -y software-properties-common vim && \
@@ -11,7 +11,7 @@ RUN apt-get install cmake -y && \
     apt-get install -y build-essential python3.5 python3.5-dev python3-pip python3.5-venv && \
     apt-get install -y git && \
     apt-get install openni2-utils -y && \
-    apt-get install libpcl-dev=1.7 -y
+    apt-get install libpcl-dev -y
 
 # fork module
 # RUN git clone -b rc_patches4 https://github.com/strawlab/python-pcl.git
