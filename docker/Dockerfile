@@ -16,7 +16,7 @@ RUN apt-get install cmake -y && \
 # fork module
 # RUN git clone -b rc_patches4 https://github.com/strawlab/python-pcl.git
 # main
-RUN git clone -b master https://github.com/hyuan/python-pcl.git
+RUN git clone -b ubuntu-16_4 https://github.com/hyuan/python-pcl.git
 
 WORKDIR /python-pcl
 
